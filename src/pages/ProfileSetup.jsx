@@ -57,13 +57,8 @@ import { auth } from '../config/firebase'
       console.error('Error storing array:', error);
     }
   };
-<<<<<<< Updated upstream
-
-  const handleSubmit = async(e) => {
-=======
 */
   const  handleSubmit = (e) => {
->>>>>>> Stashed changes
     e.preventDefault();
   //  storeUserArray();
     //storePartnerArray();

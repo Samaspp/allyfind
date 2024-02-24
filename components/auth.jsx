@@ -4,6 +4,7 @@ import {createUserWithEmailAndPassword,signOut,signInWithEmailAndPassword} from 
 import { collection,addDoc } from "@firebase/firestore";
 //import { Dashboard } from "./dashboard";
 import { auth,db } from "../src/config/firebase"
+import "../src/styles/Auth.css"
 export const Auth=()=>{
     const[email,setEmail]=useState("")
     const[password,setPassword]=useState("")
