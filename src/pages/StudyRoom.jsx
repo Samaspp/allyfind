@@ -1,7 +1,7 @@
 import React from 'react';
 import '../styles/StudyRoom.css'
 import TodoList from '../../components/TodoList';
-import Whiteboard from '../../components/Whiteboard';
+import PomodoroTimer from '../../components/Pomodoro';
 
 function StudyRoom() {
   return (
@@ -21,13 +21,9 @@ function StudyRoom() {
       </div>
      
       
-      <div className="whiteboard">
-      <Whiteboard />
-      </div>
+      
       <div className="study-tools">
-        <h2>Study Tools</h2>
-        <button>Start Timer</button>
-        <button>Stop Timer</button>
+       <PomodoroTimer/>
       </div>
     </div>
   );
