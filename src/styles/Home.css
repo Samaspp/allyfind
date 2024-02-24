@@ -1,0 +1,9 @@
+.home-bannerImage-container img{
+    height:100%;
+}
+
+.home-image-container img{
+    height:300px;
+    padding-right:50px;
+    padding-top:30px;
+}
