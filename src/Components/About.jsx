@@ -8,10 +8,7 @@ import '../styles/About.css'
 const About = () => {
   return (
     <div className="about-section-container" >
-        <div classNmae="about-background-image-container" >
-            <img src={AboutBackground} alt="" />
-        </div>
-        <div className="about-section-image-container" >
+       <div className="about-section-image-container" >
         <img src={AboutBackgroundImage} alt="" />
         </div>
         <div class Name="about-section-text-container" >

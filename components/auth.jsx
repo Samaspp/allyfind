@@ -1,6 +1,7 @@
 import { useState } from "react"
 import {createUserWithEmailAndPassword,signOut} from "firebase/auth"
 import { auth } from "../config/firebase"
+import '../styles/Log.css'
 export const Auth=()=>{
     const[email,setEmail]=useState("")
     const[password,setPassword]=useState("")
