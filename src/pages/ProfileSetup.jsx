@@ -16,11 +16,11 @@ import { auth } from '../config/firebase'
     { name: 'Responsibility', value: 'responsibility' },
     { name: 'Positivity', value: 'positivity' },
   ];
-
+  const [goal,setGoal] = useState('')
   const [selectedQualities, setSelectedQualities] = useState([]);
   const [partnerSelectedQualities, setPartnerSelectedQualities] = useState([]);
-  const userId=auth.currentUser.uid  
-  const [goal,setGoal] = useState('')
+  //const userId=auth.currentUser.uid  
+
 
   const handleCheckboxChange = (value) => {
     if (selectedQualities.includes(value)) {
@@ -37,7 +37,7 @@ import { auth } from '../config/firebase'
       setPartnerSelectedQualities([...partnerSelectedQualities, value]);
     }
   };
-  const storeUserArray = async () => {
+  /*const storeUserArray = async () => {
     try {
       const userDocRef = doc(db, 'details', userId); 
       await setDoc(userDocRef, { userQualities: selectedQualities }, { merge: true });
@@ -57,17 +57,22 @@ import { auth } from '../config/firebase'
       console.error('Error storing array:', error);
     }
   };
+<<<<<<< Updated upstream
 
   const handleSubmit = async(e) => {
+=======
+*/
+  const  handleSubmit = (e) => {
+>>>>>>> Stashed changes
     e.preventDefault();
-    storeUserArray();
-    storePartnerArray();
+  //  storeUserArray();
+    //storePartnerArray();
     console.log('Your Qualities:', selectedQualities); //do backend
     console.log('Partner Qualities:', partnerSelectedQualities); 
     console.log(currentUser.uId);
     const detailsRef=collection(db,details);
-try{
-    await addDoc(detailsRef, {
+/*try{
+     await addDoc(detailsRef, {
       userId: auth.currentUser.uid,
       userQualities: selectedQualities,
       partnerQualities: partnerSelectedQualities,
@@ -76,7 +81,7 @@ try{
     
   } catch (err) {
     console.error(err);
-  }
+  }*/
     console.log('Your goal:',goal);
   };
   
