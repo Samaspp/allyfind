@@ -17,8 +17,12 @@ body {
     background-color: #fff; /* Set background color of container to white */
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    justify-content: space-around;
   }
-  
+  h2 {
+    padding-bottom: 20px;
+    justify-content: center;
+  }
   input[type="email"],
   input[type="password"] {
     width: 100%;
