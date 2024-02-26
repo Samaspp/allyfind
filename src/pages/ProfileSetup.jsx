@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { db } from '../config/firebase';
 import { collection,addDoc } from 'firebase/firestore';
 import { auth } from '../config/firebase'
+import '../styles/ProfileSetup.css'
 
  function ProfileSetup() {
   const qualities = [
@@ -82,7 +83,7 @@ import { auth } from '../config/firebase'
   
 
   return (
-    <div>
+    <div className='prof'>
       <div className='user'>
       <h2>Tell us about yourself</h2>
       <form onSubmit={handleSubmit}>

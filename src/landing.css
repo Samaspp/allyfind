@@ -21,10 +21,8 @@
     height: auto;
   } 
   .App {
-
-    width: 85vw;
-    max-width: 1900px;
     margin: 0rem auto;
+    width: 100vw;
   }
   body {
     max-width: 100%;
@@ -66,17 +64,11 @@ nav {
     font-weight: 600;
     transition: 0.2s;
   }
-  .navbar-cart-icon {
-    font-size: 1.15rem;
-  }
+ 
   .primary-button:hover {
     background-color: rgb(234, 234, 234);
   }
-  .navbar-menu-container svg {
-    font-size: 1.5rem;
-    cursor: pointer;
-    height: 40px;
-  }
+  
   
   .home-banner-container {
     position: relative;
@@ -166,25 +158,7 @@ nav {
     margin-top: 2rem;
     display: flex;
   }
-  .watch-video-button {
-    margin-left: 2rem;
-    background-color: transparent;
-    outline: none;
-    border: none;
-    border-radius: 5rem;
-    font-size: 1.1rem;
-    cursor: pointer;
-    font-weight: 600;
-    color: #484848;
-    transition: 0.2s;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  .watch-video-button svg {
-    font-size: 3rem;
-    margin-right: 1rem;
-  }
+
   .contact-page-wrapper h1 {
     max-width: 900px !important;
   }
@@ -248,36 +222,7 @@ nav {
     color: #4c4c4c;
     cursor: pointer;
   }
-  .testimonial-section-bottom {
-    margin-top: 2rem;
-    background-color: white;
-    padding: 1.5rem 2rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    max-width: 750px;
-    border-radius: 2rem;
-    flex-direction: column;
-    text-align: center;
-  }
-  .testimonial-section-bottom {
-    margin: 2rem auto;
-  }
-  .testimonial-section-bottom p {
-    font-weight: 700;
-    color: #515151;
-    max-width: 500px;
-    font-size: 1.1rem;
-    margin: 2rem 0rem;
-  }
-  .testimonials-stars-container svg {
-    margin: 0rem 0.25rem;
-    font-size: 1.5rem;
-    color: #fe9e0d;
-  }
-  .testimonial-section-bottom h2 {
-    margin-top: 1.5rem;
-  }
+  
   .work-section-wrapper {
     margin-top: 15rem;
   }
